@@ -7,7 +7,7 @@
 	$email 		= $_POST['email'];
 	$pwd 		= $_POST['pwd'];
 
-	$link->query("UPDATE users SET username = '".$fistname."',email = '".$lastname."',pwd = '".$phone."' WHERE id = '".$id."'");
+	$link->query("UPDATE users SET username = '".$username."',email = '".$email."',pwd = '".$pwd."' WHERE id = '".$id."'");
 
 
 ?>
