@@ -23,7 +23,7 @@ RUN docker-php-ext-install mysqli exif
 #         apk del --no-cache freetype-dev libpng-dev libjpeg-turbo-dev
 
 # 환경 설정 파일을 Production 의 것으로 복사한다.
-RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+# RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 # 위 원소스에서 에러나서 알아보니 디렉토리가 없다고 한다 위 PHP_INI_DIR을 모르는 관계로
 # 일단 주석처리한 후 docker-compose up -d 실행함
